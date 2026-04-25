@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background : #845ec2;
+  --color-background : #4b4453;
   --color-frontground :#ff6f91;
-  --color-font : #f9f871; 
+
+  --color-primary: #f9f871;
+  --color-secondary: #ff9671;
 }
 
-@layer {
+@layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
     background-color: var(--color-background);
-    color: var(--color-font);
+    color: var(--color-secondary);
     font-family: 'Inter', sans-serif;
   }
+}
 
-  .logo {
-    font-family: "Playfair Display", serif;
+@layer components {
+  .glass {
+    background-color: var(--color-primary);
+    backdrop-filter: blur(16px);
   }
 }
