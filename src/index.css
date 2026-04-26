@@ -25,4 +25,10 @@
     background-color: var(--color-primary);
     backdrop-filter: blur(16px);
   }
+
+  .glass-strong {
+    background-color: #37323d!important;
+    backdrop-filter: blur(16px);
+    border: 1px solid whitesmoke;
+  }
 }
