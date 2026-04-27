@@ -1,3 +1,5 @@
+import { Button } from "@/components/Button";
+
 export const Egor = () => {
     return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -30,9 +32,17 @@ export const Egor = () => {
                             Mes technologies de coeur étant : PHP et ses frameworks (Symfony, Laravel), JavaScript (React, Node.js), Java et C#.                             
                         </p>
                     </div>
+
+                    <div className="animate-fade-in animation-delay-500">
+                        <Button size="lg" className="hover:bg-secondary/80 hover:text-primary">
+                            <img src="/icons/floppy-disk.png" alt="CV Icon" className="w-5 h-5 mr-2"/>
+                            Télécharger mon CV 
+                        </Button>
+                    </div>
+
                 </div>
                 <div className="z-10 animation-delay-400 animate-fade-in">
-                        <img src="pp.jpeg" alt="Egor Profile Pic" />
+                        <img src="pp.jpeg" alt="Egor Profile Pic" className="rounded-lg"/>
                 </div>
             </div>
         </div>
