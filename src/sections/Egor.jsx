@@ -39,10 +39,22 @@ export const Egor = () => {
                             Télécharger mon CV 
                         </Button>
                     </div>
-
+                    {/* social links */}
+                    <div className="flex gap-4 animate-fade-in animation-delay-600">
+                        Suivez-moi sur :
+                        {[
+                            { href: "https://github.com/TamagoNier", icon: "/icons/github.png" },
+                            { href: "https://www.linkedin.com/in/egor-gututui-8793b8262/", icon: "/icons/linkedin.png" },
+                        ].map((link, index) => (
+                            <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
+                                <img src={link.icon} alt={`${link.href} Icon`} className="w-6 h-6"/>
+                            </a>
+                        ))}
+                    </div>
                 </div>
+
                 <div className="z-10 animation-delay-400 animate-fade-in">
-                        <img src="pp.jpeg" alt="Egor Profile Pic" className="rounded-lg"/>
+                    <img src="pp.jpeg" alt="Egor Profile Pic" className="rounded-lg"/>
                 </div>
             </div>
         </div>
