@@ -1,5 +1,22 @@
 import { Button } from "@/components/Button";
 
+const skills = [
+    "PHP",
+    "Symfony",
+    "JavaScript",
+    "Java",
+    "C#",
+    "Unity",
+    "React",
+    "Node.js",
+    "SQL",
+    "PostgreSQL",
+    "Git",
+    "Github",
+    "Bootstrap",
+    "Tailwind CSS"
+];
+
 export const Egor = () => {
     return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -55,6 +72,20 @@ export const Egor = () => {
 
                 <div className="z-10 animation-delay-400 animate-fade-in">
                     <img src="pp.jpeg" alt="Egor Profile Pic" className="rounded-lg"/>
+                </div>
+            </div>
+
+            {/* Skills */}
+            <div>
+                <p>
+                    Mes competences techniques : 
+                </p>
+                <div>
+                    <div>{ skills.map((skill, index) => (
+                        <span key={index} className="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-sm mr-2 mb-2">
+                            {skill}
+                        </span>
+                    ))}</div>
                 </div>
             </div>
         </div>
